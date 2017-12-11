@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const formatInfix = require('../src/format-infix');
+const { formatInfix } = require('../src');
 
 describe('formatInfix', () => {
     it('should handle spaces after numbers', () => {

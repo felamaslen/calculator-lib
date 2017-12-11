@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const infixToPostfix = require('../src/infix-to-postfix');
+const { infixToPostfix } = require('../src');
 
 describe('Infix to Postfix converter', () => {
     it('should respect the correct order of operations', () => {

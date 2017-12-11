@@ -16,5 +16,10 @@ function evaluateInfix(raw) {
     return result;
 }
 
-module.exports = evaluateInfix;
+module.exports = {
+    formatInfix,
+    infixToPostfix,
+    evaluateInfix,
+    evaluatePostfix
+};
 

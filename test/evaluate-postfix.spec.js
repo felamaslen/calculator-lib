@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const evaluatePostfix = require('../src/evaluate-postfix');
+const { evaluatePostfix } = require('../src');
 
 describe('Postfix evaluator', () => {
     it('should respect the correct order of operations', () => {

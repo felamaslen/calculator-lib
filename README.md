@@ -13,11 +13,11 @@ Source is in ES6, released as ES5. Transpiled using Babel.
 ### Evaluation of infix expressions
 
 ```javascript
-const calculator = require('calculator-lib');
+const { evaluateInfix } = require('calculator-lib');
 
-calculator('4 + 5'); // -> 9
+evaluateInfix('4 + 5'); // -> 9
 
-calculator('2+3/(5^-1)*-1.5'); // -> -20.5
+evaluateInfix('2+3/(5^-1)*-1.5'); // -> -20.5
 ```
 
 ### Supported operators
@@ -37,7 +37,7 @@ Feel free to add more in a pull request! For example, trigonometric operations w
 ### Evaluation of (RPN) postfix expressions
 
 ```javascript
-const evaluatePostfix = require('calculator-lib/dist/evaluate-postfix');
+const { evaluatePostfix } = require('calculator-lib');
 
 evaluatePostfix('1 2 + 3 +'); // -> 6
 
@@ -47,7 +47,7 @@ evaluatePostfix('21 -3.2 *'); // -> -67.2
 ### Conversion of infix expressions to (RPN) postfix expressions
 
 ```javascript
-const infixToPostfix = require('calculator-lib/dist/infix-to-postfix');
+const { infixToPostfix } = require('calculator-lib');
 
 infixToPostfix('21 ^ 3 * 2 - 10'); // -> '21 3 ^ 2 * 10 -'
 ```

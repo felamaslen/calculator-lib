@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const evaluateInfix = require('../src');
+const { evaluateInfix } = require('../src');
 
 describe('Infix evaluator', () => {
     it('should respect the correct order of operations', () => {
