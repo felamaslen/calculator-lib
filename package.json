@@ -4,7 +4,7 @@
   "description": "Calculate infix / postfix expressions",
   "main": "./dist/index.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha --require babel-core/register \"test/**/*.spec.js\"",
+    "test": "NODE_ENV=test ./node_modules/.bin/mocha --require babel-core/register \"test/**/*.spec.js\"",
     "build": "NODE_ENV=production ./node_modules/.bin/babel src --out-dir dist",
     "prepublish": "npm run build"
   },
@@ -64,6 +64,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-stage-0": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "chai": "^4.1.2"
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
   }
 }
